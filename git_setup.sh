@@ -18,12 +18,12 @@ git --version
 
 # Configure Git wit your user details
 git config --global user.name "your_usernamme"
-git config --global user.email "your@mail.com"
+git config --global user.email "your_noreply_git_mail@users.noreply.github.com"
 
 # Generate SSH keys and display the public key
 # -f the file to save the new ssh key. It will be created or will ask for overwrite if exists.
 # -N specifiy ssh key pass or leave empty for none
-ssh-keygen -t ed25519 -C "your_noreply_git_mail@users.noreply.github.com" -f ~/.ssh/github_ed25519 -N ""
+ssh-keygen -t ed25519 -C "your_git_account@mail.com" -f ~/.ssh/github_ed25519 -N ""
 	cat ~/.ssh/github_ed25519.pub
 
 echo "Done!"
