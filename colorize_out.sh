@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# Debuging options:
+# -x: Shows each command before it's executed (enables debugging).
+# -v: Prints shell input lines as they're read, showing verbose output.
+# -e: Exits immediately if a command exits with a non-zero status (error).
+# -u: Treats unset variables as an error when substituting.
+# -o pipefail: Makes a pipeline's return status the value of the last (rightmost) command to exit with a non-zero status, or zero if all commands in the pipeline exit successfully.
 set -euo pipefail
 
 # Assign default values if user does not provide parameters
